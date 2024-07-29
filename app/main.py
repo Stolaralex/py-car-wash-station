@@ -26,7 +26,7 @@ class CarWashStation:
                            / self.distance_from_city_center)
         return round(calc_wash_price, 1)
 
-    def serve_cars(self, cars: list) -> None:
+    def serve_cars(self, cars: [Car]) -> None:
         total_cars = 0
         for car in cars:
             if car.clean_mark <= self.clean_power:
